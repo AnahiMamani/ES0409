@@ -34,11 +34,13 @@ public class Principal {
 	}
 
 	private static void formataIgnoraNome() {
-		String nomeComp= "Pedro Álvares Cabral";
+		String nomeComp= "Pedro alvares Cabral";
 		String [] nomeSepa = nomeComp.split(" ");
 		
-		for(int x=0;x>=nomeSepa;x++) {
-			
+		for(String nome : nomeSepa) {
+			if(!nome.equals(nome.toLowerCase())) {
+				System.out.println(nome);
+			}
 		}
 		
 	}
