@@ -9,15 +9,16 @@ import java.io.IOException;
 
 public class Principal {
 
-	static Scanner sc = new Scanner (System.in);
+	
 	static FileReader fr;
 	static BufferedReader br;
 	static FileWriter fw;
 	static BufferedWriter bw;
 	static final String ARQ_ENTRADA = "C:\\Users\\FATEC ZONA LESTE\\Desktop\\entrada.txt";
-	static final String ARQ_SAIDA = "C:\\Users\\FATEC ZONA LESTE\\Desktop\\entrada.txt";
-	
+	static final String ARQ_SAIDA = "C:\\Users\\FATEC ZONA LESTE\\Desktop\\saida.txt";
+
 	public static void main(String[] args) throws IOException {
+		Scanner sc = new Scanner (System.in);
 		fr = new FileReader(ARQ_ENTRADA);
 		br = new BufferedReader(fr);
 		fw = new FileWriter(ARQ_SAIDA); 
